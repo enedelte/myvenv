@@ -1,5 +1,3 @@
--- Create a new table called '[Causales_PE]' in schema '[dbo]'
--- Drop the table if it already exists
 IF OBJECT_ID('[dbo].[Causales_PE]', 'U') IS NOT NULL
 DROP TABLE [dbo].[Causales_PE]
 GO
