@@ -13,3 +13,11 @@ worksheet = client.open("Seguimiento PQR Procesos PE").worksheet("Certificado_de
 
 plano = pd.DataFrame(worksheet.get_values())
 
+plano.to_csv("certificados.txt", 
+             header=True,
+             index=True,
+             sep=',',
+             quoting=csv.QUOTE_MINIMAL, 
+             escapechar=";")
+
+print('Se ha actualizado el documento\n certificados.txt.\nYa puedes verificarlo.')

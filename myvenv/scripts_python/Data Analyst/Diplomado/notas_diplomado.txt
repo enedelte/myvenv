@@ -1,0 +1,24 @@
+descriptive, diagnostic, predictive, and prescriptive analytics
+
+
+Descriptive Analytics. It consists of describing current situations
+and reporting on them.
+Several techniques are employed to perform this level
+of analytics. For instance, descriptive statistics tools like
+histograms and charts are among the techniques used in
+descriptive analytics.
+Diagnostic Analysis. It aims to explain why certain events
+occurred and what the factors that triggered them are. For
+example, diagnostic analysis attempts to understand the
+reasons behind the regular readmission of some patients by
+using several methods such as clustering and decision trees.
+Predictive Analytics. It reflects the ability to predict future
+events; it also helps in identifying trends and determining
+probabilities of uncertain outcomes. An illustration of its
+role is to predict whether a patient can get complications or
+not. Predictive models are often built usingmachine learning
+techniques.
+Hindawi
+Advances in Bioinformatics
+Volume 2018, Article ID 4059018, 10 pages
+https://doi.org/10.1155/2018/4059018
