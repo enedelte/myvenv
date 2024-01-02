@@ -15,7 +15,7 @@ def extract_emails_from_docx(docx_file):
     return emails
 
 def main():
-    folder_path = r"C:\Users\dapache\OneDrive - NUEVA EPS\GO_PQR\GESTIÓN_PQR\2023\DICIEMBRE\27122023"
+    folder_path = r"C:\Users\dapache\OneDrive - NUEVA EPS\GO_PQR\GESTIÓN_PQR\2023\DICIEMBRE\28122023"
 
     # Lista para almacenar los correos electrónicos de todos los archivos
     all_emails = []
