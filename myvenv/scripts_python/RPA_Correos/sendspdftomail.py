@@ -3,10 +3,11 @@ import win32com.client as win32
 import pandas as pd
 
 outlook = win32.Dispatch("Outlook.Application")
-ruta_base = r"C:\Users\dapache\OneDrive - NUEVA EPS\Escritorio\RPQR"
+ruta_base = r"C:\Users\daale\OneDrive - NUEVA EPS\Escritorio\RPQR"
 
 def enviar_correo(destinatario, asunto, cuerpo, adjunto):
     mail = outlook.CreateItem(0)
+    inbox.Folders.Item("production")
     mail.To = destinatario
     mail.Subject = asunto
     mail.Body = cuerpo
