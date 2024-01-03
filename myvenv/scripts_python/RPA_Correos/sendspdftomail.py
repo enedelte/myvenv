@@ -3,20 +3,20 @@ import win32com.client as win32
 import pandas as pd
  
 outlook = win32.Dispatch("Outlook.Application")
-<<<<<<< HEAD
+
 ruta_base = r"C:\Users\dapache\OneDrive - NUEVA EPS\Escritorio\RPQR"
 alias = "respuestas.pqr@nuevaeps.com.co"  # Reemplaza con el alias o dirección alternativa
  
 def enviar_correo_desde_alias(destinatario, asunto, cuerpo, adjunto, alias):
     mail = outlook.CreateItem(0)
     mail.SentOnBehalfOfName = alias  # Establecer el alias o dirección alternativa
-=======
+
 ruta_base = r"C:\Users\daale\OneDrive - NUEVA EPS\Escritorio\RPQR"
 
 def enviar_correo(destinatario, asunto, cuerpo, adjunto):
     mail = outlook.CreateItem(0)
     inbox.Folders.Item("production")
->>>>>>> 372731d27e5a22e898d69e29f2f8845e4eb3a7bc
+
     mail.To = destinatario
     mail.Subject = asunto
     mail.Body = cuerpo
