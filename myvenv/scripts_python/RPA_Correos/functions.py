@@ -4,7 +4,7 @@ import pandas as pd
 from tkinter import filedialog 
 
 outlook = win32.Dispatch("Outlook.Application")
-ruta_base = r"C:\Users\dapache\OneDrive - NUEVA EPS\Escritorio\RPQR"
+ruta_base = r"C:\Users\dapache\OneDrive - NUEVA EPS\Escritorio\RPQR" #cambiar dirección según tipo de usuario
 alias = "respuestas.pqr@nuevaeps.com.co"
 
 def enviar_correo_desde_alias(destinatario, asunto, cuerpo, adjunto, alias):
@@ -39,5 +39,7 @@ def seleccionar_archivo():
     if archivo_csv:
         enviar_correos_desde_csv(archivo_csv)
         print('Se han enviado por completo los correos relacionados')
+
+
 
 
