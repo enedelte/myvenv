@@ -1,4 +1,5 @@
 from functions import enviar_correo_desde_alias, enviar_correos_desde_csv, seleccionar_archivo
+from convertpdf import convertir_word_a_pdf, seleccionar_rutas
 import tkinter as tk
 from tkinter import filedialog
 import customtkinter
