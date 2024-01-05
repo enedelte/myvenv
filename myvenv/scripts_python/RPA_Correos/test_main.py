@@ -5,6 +5,7 @@ from docx2pdf import convert
 import win32com.client as win32
 import pandas as pd
 import sys
+from test_convetpdf import seleccionar_archivo
 
 outlook = win32.Dispatch("Outlook.Application")
 ruta_base = r"C:\Users\dapache\GOPS"  # Cambiar según tu directorio
@@ -123,7 +124,7 @@ btn_convertir_pdf = tk.Button(ventana, text="Convertir Word a PDF", command=sele
 btn_convertir_pdf.pack(pady=10)
 
 # Botón para enviar correos desde CSV
-btn_enviar_correos = tk.Button(ventana, text="Enviar Correos Automaticamente", command=enviar_correos_desde_csv_seleccionar)
+btn_enviar_correos = tk.Button(ventana, text="Enviar Correos Automaticamente", command=seleccionar_archivo)
 btn_enviar_correos.pack(pady=10)
 
 # Iniciar el bucle principal de la interfaz gráfica
