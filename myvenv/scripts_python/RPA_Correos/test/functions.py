@@ -7,7 +7,7 @@ import re
 import csv
 
 outlook = win32.Dispatch("Outlook.Application")
-ruta_base = r"C:\Users\dapache\OneDrive - NUEVA EPS\Escritorio\RPQR" #cambiar dirección según tipo de usuario
+ruta_base = r"C:\\Users\\" #cambiar dirección según tipo de usuario
 alias = "respuestas.pqr@nuevaeps.com.co"
 
 def enviar_correo_desde_alias(destinatario, asunto, cuerpo, adjunto, alias):
