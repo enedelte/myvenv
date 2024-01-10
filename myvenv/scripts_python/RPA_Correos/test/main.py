@@ -5,16 +5,14 @@ from docx2pdf import convert
 import win32com.client as win32
 import pandas as pd
 import sys 
-from functions import enviar_correo_desde_alias, enviar_correos_desde_csv, seleccionar_archivo_csv
-from convertpdf import seleccionar_rutas1
-from sendmail import main
-
+from functions import enviar_correo_desde_alias, enviar_correos_desde_csv, seleccionar_archivo_csv, main
+from convertpdf import seleccionar_rutas
 
 #Crear la interfaz gráfica
 ventana = tk.Tk()
-icono = r"C:\Users\dapache\python_scripts\myvenv\scripts_python\RPA_Correos\test\assets\icono.ico"
+icono = "C:\\Users\\dapache\\python_scripts\\myvenv\\scripts_python\\RPA_Correos\\test\\icono.ico"
 version = "V.1.0.1"
-imagen_path = "C:\\Users\\dapache\\python_scripts\\myvenv\\scripts_python\\RPA_Correos\\test\\assets\\imagen.png"  #Imagen NEPS
+imagen_path = "C:\\Users\\dapache\\python_scripts\\myvenv\\scripts_python\\RPA_Correos\\test\\imagen.png"  #Imagen NEPS
 
 if os.path.exists(imagen_path):
     imagen = tk.PhotoImage(file=imagen_path)
@@ -37,7 +35,7 @@ ventana.iconbitmap(icono)
 encabezado_frame = tk.Frame(ventana, bg="#001a21", height=10)
 encabezado_frame.pack(side="right", fill="both")
 # Botón para seleccionar documentos a convertir a PDF
-btn_seleccionar_word = tk.Button(ventana, text='Imprimir mis pdf', command=seleccionar_rutas1, width=10, bg="#00526c", fg="white", relief="flat")
+btn_seleccionar_word = tk.Button(ventana, text='Imprimir mis pdf', command=seleccionar_rutas, width=10, bg="#00526c", fg="white", relief="flat")
 btn_seleccionar_word.pack(pady=1, padx=20, side=None, fill="both")
 # Botón para crar archivo CSV
 btn_recuperar_email = tk.Button(ventana, text="Organizar mis correos", command=main, width=10, bg="#00526c", fg="white", relief="flat")
@@ -46,7 +44,6 @@ btn_recuperar_email.pack(pady=1, padx=20, side=None, fill="both")
 # Botón para seleccionar el archivo CSV
 btn_seleccionar_csv = tk.Button(ventana, text="Enviar mis correos", command=seleccionar_archivo_csv, width=10, bg="#00526c", fg="white", relief="flat")
 btn_seleccionar_csv.pack(pady=1, padx=20, side=None, fill="both")
-
 
 # Botón Salir
 def cerrar_ventana():

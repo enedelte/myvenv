@@ -26,7 +26,7 @@ def convertir_word_a_pdf(carpeta_origen, carpeta_destino):
 
     messagebox.showinfo("Completado", f"La conversión se ha completado. Archivos PDF guardados en: {carpeta_destino}")
 
-def seleccionar_rutas1():
+def seleccionar_rutas():
     # Crear la ventana principal de Tkinter
     root = tk.Tk()
     root.withdraw()  # Ocultar la ventana principal
@@ -53,4 +53,4 @@ def seleccionar_rutas1():
 
 if __name__ == "__main__":
     # Llamar a la función que permite seleccionar las rutas
-    seleccionar_rutas1()
+    seleccionar_rutas()
