@@ -6,6 +6,11 @@ import pandas as pd
 from tkinter import filedialog, messagebox
 import win32com.client as win32
 
+<<<<<<< HEAD:myvenv/scripts_python/RPA_Correos/AppDesk1/functions_test.py
+=======
+outlook = win32.Dispatch("Outlook.Application")
+ruta_base = r"C:\\Users\\"  # Cambiar según el tipo de usuario
+>>>>>>> e2b4a1453cf4490108f7b7cb45f6a67830b1d864:myvenv/scripts_python/RPA_Correos/test/sendmail.py
 alias = "respuestas.pqr@nuevaeps.com.co"
 
 def enviar_correo_desde_alias(destinatario, asunto, cuerpo, adjunto, alias):

@@ -6,8 +6,13 @@ import docx
 import re
 import csv
 
+<<<<<<< HEAD:myvenv/scripts_python/RPA_Correos/AppDesk1/functions.py
 
 
+=======
+outlook = win32.Dispatch("Outlook.Application")
+ruta_base = r"C:\\Users\\" #cambiar dirección según tipo de usuario
+>>>>>>> e2b4a1453cf4490108f7b7cb45f6a67830b1d864:myvenv/scripts_python/RPA_Correos/test/functions.py
 alias = "respuestas.pqr@nuevaeps.com.co"
 
 def enviar_correo_desde_alias(destinatario, asunto, cuerpo, adjunto, alias):
