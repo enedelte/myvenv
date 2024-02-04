@@ -1,7 +1,9 @@
 import tkinter as tk
-from tkinter import filedialog, messagebox, ttk
+from tkinter import filedialog, messagebox, ttk, Label, Listbox
 import os
 from assignment import cargar_y_consultar_asignacion
+from funciones import main as main_func
+from creador_cartas import crear_carta
 
 # Crear la interfaz gráfica
 ventana_ppl = tk.Tk()
@@ -43,6 +45,21 @@ def actualizar_asignacion():
     btn_actualizar_asignacion.place(x=40, y=160)
 actualizar_asignacion()
 
+def enviar_correos():
+
+    btn_enviar_email = tk.Button(ventana_ppl, text="Enviar Correos", command=main_func, width=20, bg="#00526c", fg="white", relief="flat")
+    btn_enviar_email.pack(pady=10, padx=20, side=None, fill="both")
+    btn_enviar_email.place(x=40, y=220)
+
+enviar_correos()
+
+def crear_carta():
+
+    btn_crear_carta = tk.Button(ventana_ppl, text="Crear Respuesta", command=None, width=20, bg="#00526c", fg="white", relief="flat")
+    btn_crear_carta.pack(pady=10, padx=20, side=None, fill="both")
+    btn_crear_carta.place(x=40, y=190)
+
+crear_carta()
 
 # Botón Salir
 def cerrar_ventana():
@@ -50,10 +67,23 @@ def cerrar_ventana():
     if resultado:
         ventana_ppl.destroy()
 
+
+
+lbl = Label(ventana_ppl, text="Casos Asignados")
+
+listbox = Listbox(ventana_ppl)
+
+listbox.insert(1, asignacion)
+
+lbl.pack()
+listbox.pack()
+
+
+
 def salir():
     btn_salir = tk.Button(ventana_ppl, text= "Salir", command=cerrar_ventana, width=10, bg="#f44336", fg="white", relief="flat" )
     btn_salir.pack(pady=1, padx=1, side=None, fill="both")
-    btn_salir.place(x=450, y=500)
+    btn_salir.place(x=40, y=500)
     
 salir()
 
