@@ -70,12 +70,9 @@ def cerrar_ventana():
 
 
 lbl = Label(ventana_ppl, text="Casos Asignados")
-
 listbox = Listbox(ventana_ppl)
-
-listbox.insert(1, asignacion)
-
-lbl.pack()
+listbox.insert(1, cargar_y_consultar_asignacion)
+lbl.pack(pady=50, padx=30, side='right', fill="both")
 listbox.pack()
 
 
