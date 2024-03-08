@@ -120,7 +120,7 @@ def escribir_correo_en_docx(correo, nombre_archivo):
         logging.info(f"El correo '{correo['Asunto']}' ha sido guardado en el archivo '{nombre_archivo}'.")
     except Exception as e:
         messagebox.showerror("Error", f"Error al escribir el correo en '{nombre_archivo}': {e}")
-        logging.error(f"Error al escribir el correo en '{nombre_archivo}': {e}")
+        logging.error(f"Error al escribir el correo en ' Prueba de envío" + {nombre_archivo}': {e}")
 
 def seleccionar_ruta():
     """

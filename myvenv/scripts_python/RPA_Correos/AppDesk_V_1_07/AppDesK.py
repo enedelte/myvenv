@@ -47,9 +47,9 @@ encabezado_frame.pack(side="right", fill="both")
 
 
 # Botón Conversion PDF
-btn_convertir_pdf = tk.Button(ventana, text="Convertir PDF", command=seleccionar_rutas, width=10,
-                                bg="#00526c", fg="white", relief="flat")
-btn_convertir_pdf.pack(pady=1, padx=20, side=None, fill="both")
+# btn_convertir_pdf = tk.Button(ventana, text="Convertir PDF", command=seleccionar_rutas, width=10,
+#                                 bg="#00526c", fg="white", relief="flat")
+# btn_convertir_pdf.pack(pady=1, padx=20, side=None, fill="both")
 
 # Botón envio correos
 btn_enviar_email = tk.Button(ventana, text="Enviar Correos", command=main_func, width=10,
