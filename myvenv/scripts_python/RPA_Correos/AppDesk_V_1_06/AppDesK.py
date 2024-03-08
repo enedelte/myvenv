@@ -6,7 +6,7 @@ import win32com.client as win32
 import pandas as pd
 from funciones import main as main_func
 from convertpdf import seleccionar_rutas
-from enviados import guardar_correos_en_csv
+from enviados import main
 
 # Ruta global para acceder desde funciones
 respuestas_path = ""
@@ -57,7 +57,7 @@ btn_enviar_email = tk.Button(ventana, text="Enviar Correos", command=main_func, 
 btn_enviar_email.pack(pady=1, padx=20, side=None, fill="both")
 
 # Bóton guardar enviados
-btn_enviar_email = tk.Button(ventana, text="Guardar Correos Enviados", command=None, width=10,
+btn_enviar_email = tk.Button(ventana, text="Guardar Correos Enviados", command=main, width=10,
                                 bg="#00526c", fg="white", relief="flat")
 btn_enviar_email.pack(pady=1, padx=20, side=None, fill="both")
 
@@ -70,7 +70,7 @@ btn_salir = tk.Button(ventana, text="Salir", command=cerrar_ventana, width=10, b
 btn_salir.pack(pady=25, padx=90, side=None, fill="both")
 
 # etiqueta versión
-etiqueta = tk.Label(ventana, text="Versión 1.0.5", width=50, border=10, bg="#002633", fg="white", relief="flat",
+etiqueta = tk.Label(ventana, text="Versión 1.0.6", width=50, border=10, bg="#002633", fg="white", relief="flat",
                     justify="center")
 etiqueta.pack(pady=1, padx=1, side="right", fill="both")
 
