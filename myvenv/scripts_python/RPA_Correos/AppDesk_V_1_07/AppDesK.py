@@ -5,7 +5,7 @@ from docx2pdf import convert
 import win32com.client as win32
 import pandas as pd
 from funciones import main as main_func
-from convertpdf import seleccionar_rutas
+#from convertpdf import seleccionar_rutas
 from enviados import main
 
 # Ruta global para acceder desde funciones
