@@ -70,7 +70,7 @@ btn_salir = tk.Button(ventana, text="Salir", command=cerrar_ventana, width=10, b
 btn_salir.pack(pady=25, padx=90, side=None, fill="both")
 
 # etiqueta versión
-etiqueta = tk.Label(ventana, text="Versión 1.0.6", width=50, border=10, bg="#002633", fg="white", relief="flat",
+etiqueta = tk.Label(ventana, text="Versión 1.0.7", width=50, border=10, bg="#002633", fg="white", relief="flat",
                     justify="center")
 etiqueta.pack(pady=1, padx=1, side="right", fill="both")
 
